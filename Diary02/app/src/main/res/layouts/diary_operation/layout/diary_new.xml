@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/diary_new_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/diary_new_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="标题"
+            android:textSize="30dp"
+            android:background="#00000000"/>
+
+        <EditText
+            android:id="@+id/diary_new_author"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="作者"
+            android:textSize="30dp"
+            android:background="#00000000"/>
+
+        <EditText
+            android:id="@+id/diary_new_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="时间"
+            android:textSize="30dp"
+            android:background="#00000000"/>
+
+        <EditText
+            android:id="@+id/diary_new_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="日记内容"
+            android:textSize="30dp"
+            android:background="#00000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/diary_new_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/diary_new_ll1">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="保  存"
+            android:textColor="@color/colorWrite"
+            android:textSize="15dp"
+            android:layout_marginRight="40dp"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="返回个人界面"
+            android:textColor="@color/colorWrite"
+            android:textSize="15dp"
+            android:layout_marginLeft="40dp"
+            android:onClick="onClick1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

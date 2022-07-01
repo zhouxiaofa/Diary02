@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/user_modify_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/user_modify_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="账号"
+        android:textSize="40dp"
+        android:background="#005e6d82"/>
+
+    <EditText
+        android:id="@+id/user_modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="密码"
+        android:textSize="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#005e6d82"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_modify_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/user_modify_ll1">
+
+        <Button
+            android:id="@+id/user_modify_button"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="修改"
+            android:textColor="@color/colorWrite"
+            android:textSize="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/user_skip_button"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="@color/colorWrite"
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

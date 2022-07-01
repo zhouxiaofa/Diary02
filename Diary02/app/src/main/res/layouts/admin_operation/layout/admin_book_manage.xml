@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/mquery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="图书查询"
+        android:onClick="click1"/>
+    <Button
+        android:id="@+id/madd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="图书添加"
+        android:onClick="click2"/>
+    <Button
+        android:id="@+id/minternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="将数据添加到内部"
+        android:onClick="click3"/>
+    <Button
+        android:id="@+id/mout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="将数据添加到外部"
+        android:onClick="click4"/>
+    <Button
+        android:id="@+id/sql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="将数据添加到SQL数据库"
+        android:onClick="click5"/>
+    <Button
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="聊天室"
+        android:onClick="click6"/>
+
+
+</LinearLayout>

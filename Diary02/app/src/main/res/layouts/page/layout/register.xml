@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/register_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="260dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账 号: "
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fragment_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/register_ll1"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密 码: "
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/fragment_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/register_ll2">
+
+        <Button
+            android:id="@+id/register_button1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="返 回"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/register_button2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick1"/>
+    </LinearLayout>
+
+</RelativeLayout>

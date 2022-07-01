@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/user_main_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/user_main_imageButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新建日记"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/user_main_imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询日记"
+            android:onClick="onClick4"/>
+
+        <Button
+            android:id="@+id/user_main_imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进圈"
+            android:onClick="onClick2"/>
+
+        <Button
+            android:id="@+id/user_main_imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:onClick="onClick3"/>
+
+        <Button
+            android:id="@+id/user_main_imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注销"
+            android:layout_alignParentLeft="true"
+            android:onClick="onClick1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

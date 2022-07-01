@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_3">
+
+    <LinearLayout
+        android:id="@+id/admin_main_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //日记管理按钮
+        <Button
+            android:id="@+id/admin_main_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="日记管理"
+            android:onClick="onClick"/>
+        //用户管理按钮
+        <Button
+            android:id="@+id/admin_main_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户管理"
+            android:onClick="onClick1"/>
+        //图书管理按钮
+        <Button
+            android:id="@+id/admin_main_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="图书管理"
+            android:onClick="onClick2"/>
+
+        //图书管理按钮
+        <Button
+            android:id="@+id/admin_main_button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="注销"
+            android:onClick="onClick3"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

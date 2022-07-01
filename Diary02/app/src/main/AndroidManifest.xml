@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myapplication">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Page.HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Book_operation.Book_intoSql_add"/>
+        <activity android:name=".Book_operation.Book_chatRoom"/>
+        <activity android:name=".Book_operation.Book_search" />
+        <activity android:name=".Book_operation.Book_add"/>
+        <activity android:name=".Book_operation.Book_out_add"/>
+        <activity android:name=".Book_operation.Book_internal_add"/>
+
+        <activity android:name=".Page.Login"/>
+        <activity android:name=".Page.Admin_main"/>
+        <activity android:name=".Page.See_anywhere"/>
+        <activity android:name=".Page.Register"/>
+        <activity android:name=".Page.User_main"
+            android:theme="@style/CustomTitleTheme"/>
+
+        <activity android:name=".Admin_operation.Admin_book_manage"/>
+        <activity android:name=".Admin_operation.Admin_user_manage"/>
+        <activity android:name=".Admin_operation.Admin_diary_manage"
+            android:theme="@style/CustomTitleTheme"/>
+
+        <activity android:name=".Diary_operation.Diary_new"/>
+        <activity android:name=".Diary_operation.Diary_search"/>
+        <activity android:name=".Diary_operation.Diary_see"/>
+        <activity android:name=".Diary_operation.Diary_modify"/>
+
+        <activity android:name=".User_operation.User_new"/>
+        <activity android:name=".User_operation.User_modify"/>
+        <activity android:name=".User_operation.User_search"/>
+
+        <activity android:name=".Sql_modify"/>
+        <activity android:name=".Result"/>
+        <activity android:name=".Set"/>
+        <activity android:name=".Wifi"/>
+        <activity android:name=".internal_result"/>
+        <activity android:name=".Out_result"/>
+        <activity android:name=".diary_set"/>
+
+    </application>
+
+</manifest>

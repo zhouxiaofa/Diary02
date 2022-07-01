@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/login_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="260dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账 号: "
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/login_account"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fragment_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/login_ll1"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密 码: "
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/fragment_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/login_ll2">
+
+        <Button
+            android:id="@+id/login_break"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="返 回"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="登 录"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还未注册?点击注册"
+        android:textColor="@color/colorWrite"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right|bottom"
+        android:onClick="onClick2"
+        android:background="#00000000"/>
+
+</RelativeLayout>

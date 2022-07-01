@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<PreferenceCategory android:title="我的主页"
+    >
+    <EditTextPreference
+        android:key="name"
+        android:summary="请输入你的昵称"
+        android:textSize="60px"
+        android:title="昵称" />
+    <EditTextPreference
+        android:key="color"
+        android:summary="请输入你想要的字体颜色"
+        android:textSize="60px"
+        android:title="字体颜色" />
+    <EditTextPreference
+        android:key="size_name"
+        android:summary="请输入你想要的字体大小"
+        android:textSize="60dp"
+        android:title="字体大小" />
+</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2">
+
+    <LinearLayout
+        android:id="@+id/user_new_LL1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="260dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="账 号: "
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/user_new_account"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/fragment_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_new_LL2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/user_new_LL1"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="密 码: "
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/user_new_password"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:background="@drawable/fragment_style"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_new_LL3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_new_LL2">
+
+        <CheckBox
+            android:id="@+id/user_new_checkBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="是否为管理员用户"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="64dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_new_LL4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/user_new_LL3">
+
+        <Button
+            android:id="@+id/user_new_return"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="返 回"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/user_new_register"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="注 册"
+            android:textColor="@color/colorWrite"
+            android:textSize="28dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/fragment_style"
+            android:onClick="onClick1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

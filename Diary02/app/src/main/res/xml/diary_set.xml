@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="我的设置"
+        ></PreferenceCategory>
+        <EditTextPreference
+            android:key="size_name"
+            android:summary="请输入你想要的字体大小"
+            android:textSize="60dp"
+            android:title="字体大小" />
+    <PreferenceCategory android:title="请选择你想要的日记字体颜色"
+        >
+
+        <CheckBoxPreference
+            android:key="bule"
+            android:title="主题蓝"></CheckBoxPreference>
+        <CheckBoxPreference
+            android:title="纯正黑"
+            android:key="black" />
+        <CheckBoxPreference android:title="典雅白"
+            android:key="white"
+            ></CheckBoxPreference>
+        <CheckBoxPreference android:title="高级灰"
+            android:key="gray"
+            ></CheckBoxPreference>
+        <CheckBoxPreference android:title="中国红"
+        android:key="red"
+        ></CheckBoxPreference>
+        <CheckBoxPreference android:title="高贵金"
+            android:key="golden"
+            ></CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="请选择你想要的日记背景颜色"
+        >
+        <CheckBoxPreference android:title="图一"
+            android:key="b1"
+            ></CheckBoxPreference>
+        <CheckBoxPreference android:title="图二"
+            android:key="b2"
+            ></CheckBoxPreference>
+        <CheckBoxPreference android:title="图三"
+        android:key="b3"
+        ></CheckBoxPreference>
+        <CheckBoxPreference android:title="图四"
+        android:key="b4"
+        ></CheckBoxPreference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

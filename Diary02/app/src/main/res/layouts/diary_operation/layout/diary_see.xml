@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/diary_modify_l1"
+    android:background="@drawable/background_4">
+
+    <EditText
+        android:id="@+id/diary_share_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="id"
+        android:textSize="40dp"
+        android:background="#005e6d82"/>
+    <EditText
+        android:id="@+id/diary_share_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="标题"
+        android:textSize="40dp"
+        android:background="#005e6d82"/>
+    <EditText
+        android:id="@+id/diary_share_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005e6d82"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/diary_share_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005e6d82"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/diary_share_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="日记内容"
+        android:textSize="40dp"
+        android:background="#005e6d82"/>
+
+    <Button
+        android:id="@+id/diary_share"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="返回"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:textSize="25dp"
+        android:textColor="@color/colorWrite"/>
+
+
+
+
+</LinearLayout>

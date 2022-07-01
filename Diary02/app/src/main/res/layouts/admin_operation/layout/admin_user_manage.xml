@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_4">
+
+    <LinearLayout
+        android:id="@+id/admin_user_manage_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //新建用户(包括管理员和普通用户)
+        <Button
+            android:id="@+id/aum_button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新建用户"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/aum_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询用户"
+            android:onClick="onClick1"/>
+        <Button
+            android:id="@+id/aum_button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="返回上一级"
+            android:onClick="onClick2"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/admin_user_manage_lv1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/admin_user_manage_ll1"/>
+
+</RelativeLayout>
